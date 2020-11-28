@@ -16,6 +16,7 @@ class Product(models.Model):
     name        = models.CharField(default='', max_length=100, primary_key=True)
     desc        = models.TextField(default='', max_length=1000)
     image       = models.ImageField(upload_to=path_and_rename, default='', blank=True)
+    price       = models.IntegerField(null=True, default=0)
 
     def __str__(self):
         return self.name
