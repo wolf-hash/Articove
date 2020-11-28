@@ -21,6 +21,7 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'articove.herokuapp.com']
 
 INSTALLED_APPS = [
     'main',
+    'accounts',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -116,3 +117,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = 'media/'
 
 django_heroku.settings(locals())
+
+AUTH_USER_MODEL = 'accounts.UserAccount'
+ACCOUNT_USER_MODEL_USERNAME_FIELD = 'username'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = True
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+# ACCOUNT_EMAIL_VERIFICATION = 'mandatory'

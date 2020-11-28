@@ -51,7 +51,6 @@
 				// Poptrox.
 					$content.poptrox({
 						usePopupCaption: true,
-						usePopupNav: true,
 						fadeSpeed: 300,
 						usePopupEasyClose: true
 					});
