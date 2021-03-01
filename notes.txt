@@ -1,6 +1,15 @@
 product detail
 gift pack
-google login
+google login (use allauth)
 payment gateway
 rename gallery to studio
 quoted appreciations
+
+search
+cart (checkout) buy now
+product page
+about us
+get in touch
+
+https://99designs.com/inspiration/logos/gallery
+https://www.colettehq.com/
